@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #f6f8fb;
+    color: #1b2738;
+    font-family: 'DM Sans', sans-serif
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh
+}
+
+.sidebar {
+    width: 245px;
+    background: #fff;
+    border-right: 1px solid #e9edf3;
+    padding: 25px 17px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 0 8px 38px
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+    background: #eaf1ff;
+    color: #3977e8;
+    display: grid;
+    place-items: center;
+    font-size: 21px
+}
+
+.brand b {
+    display: block;
+    font: 800 17px Manrope
+}
+
+.brand small {
+    display: block;
+    color: #9aa4b2;
+    font-size: 10px
+}
+
+.nav-caption,
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #9aa4b2
+}
+
+.nav-caption {
+    padding: 0 10px 12px
+}
+
+.sidebar nav {
+    display: grid;
+    gap: 5px
+}
+
+.sidebar nav a {
+    padding: 12px;
+    border-radius: 9px;
+    text-decoration: none;
+    color: #758194;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.sidebar nav a i {
+    font-size: 17px
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: #edf3ff;
+    color: #3271e2
+}
+
+.sidebar-foot {
+    margin-top: auto;
+    color: #aab3bf;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding: 20px 10px 0
+}
+
+.main {
+    flex: 1;
+    min-width: 0;
+    max-width: 1600px;
+    margin: auto;
+    padding: 32px 40px 20px
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+.topbar h1 {
+    font: 800 27px Manrope;
+    margin: 5px 0
+}
+
+.topbar p,
+.panel-head p {
+    font-size: 12px;
+    color: #8994a3;
+    margin: 0
+}
+
+.date {
+    background: white;
+    border: 1px solid #e9edf3;
+    border-radius: 9px;
+    padding: 10px 13px;
+    font-size: 11px;
+    color: #647184
+}
+
+.date i {
+    color: #3977e8;
+    margin-right: 6px
+}
+
+.banner {
+    background: linear-gradient(110deg, #1d3e70, #4385dc);
+    color: white;
+    border-radius: 16px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 145px;
+    overflow: hidden
+}
+
+.banner span {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #c8dcff;
+    font-weight: 700
+}
+
+.banner h2 {
+    font: 700 21px Manrope;
+    margin: 8px 0 5px
+}
+
+.banner p {
+    font-size: 12px;
+    color: #dce9fb;
+    margin: 0
+}
+
+.banner-icon {
+    font-size: 85px;
+    color: #ffffff38;
+    margin-right: 30px
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin: 19px 0
+}
+
+.stats article,
+.panel {
+    background: white;
+    border: 1px solid #edf0f4;
+    border-radius: 13px;
+    box-shadow: 0 3px 14px #1e325008
+}
+
+.stats article {
+    padding: 17px
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #778394;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.stat-label i {
+    font-size: 17px
+}
+
+.stats strong {
+    display: block;
+    font: 800 27px Manrope;
+    margin-top: 11px
+}
+
+.stats small {
+    font-size: 10px;
+    color: #9aa4b2
+}
+
+.blue {
+    color: #3977e8
+}
+
+.purple {
+    color: #8063dc
+}
+
+.orange {
+    color: #e99a3e
+}
+
+.green {
+    color: #31a779
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(260px, .9fr);
+    gap: 16px;
+    align-items: start
+}
+
+.panel {
+    padding: 19px;
+    min-width: 0
+}
+
+.panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px
+}
+
+.panel-head h3 {
+    font: 700 14px Manrope;
+    margin: 0 0 4px
+}
+
+.tag {
+    background: #f0f5ff;
+    color: #6d8fd2;
+    border-radius: 20px;
+    padding: 6px 9px;
+    font-size: 8px;
+    font-weight: 700
+}
+
+.table {
+    font-size: 10px;
+    color: #647184
+}
+
+.table th {
+    font-size: 8px;
+    letter-spacing: .7px;
+    color: #9aa4b2;
+    border-bottom: 1px solid #edf0f4
+}
+
+.table td {
+    border-color: #f0f2f5
+}
+
+.table td b {
+    color: #354255
+}
+
+.marks {
+    background: #eef8f3;
+    color: #26966a;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.empty {
+    text-align: center;
+    padding: 32px 10px;
+    color: #9aa4b2
+}
+
+.empty i {
+    display: block;
+    font-size: 27px;
+    margin-bottom: 8px
+}
+
+.empty b {
+    display: block;
+    color: #485568;
+    font-size: 12px
+}
+
+.empty p {
+    font-size: 10px;
+    margin: 5px 0
+}
+
+.quick>a {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f5;
+    text-decoration: none;
+    color: #354255
+}
+
+.quick>a>i:first-child {
+    font-size: 18px;
+    width: 24px
+}
+
+.quick>a span {
+    flex: 1
+}
+
+.quick>a b,
+.quick>a small {
+    display: block
+}
+
+.quick>a b {
+    font-size: 10px
+}
+
+.quick>a small {
+    font-size: 9px;
+    color: #9aa4b2;
+    margin-top: 3px
+}
+
+.quick>a>i:last-child {
+    font-size: 10px;
+    color: #aab3bf
+}
+
+.tip {
+    display: flex;
+    gap: 9px;
+    background: #fff9ed;
+    color: #d18b2f;
+    padding: 11px;
+    border-radius: 9px;
+    margin-top: 14px
+}
+
+.tip b,
+.tip small {
+    display: block
+}
+
+.tip b {
+    font-size: 10px
+}
+
+.tip small {
+    font-size: 9px;
+    color: #a58b67;
+    margin-top: 3px
+}
+
+footer {
+    text-align: center;
+    color: #a7b0bc;
+    font-size: 9px;
+    padding-top: 20px
+}
+
+@media(max-width:1050px) {
+    .main {
+        padding: 25px
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:700px) {
+    .layout {
+        display: block
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 13px
+    }
+
+    .brand {
+        padding: 0 4px 12px
+    }
+
+    .nav-caption,
+    .sidebar-foot {
+        display: none
+    }
+
+    .sidebar nav {
+        display: flex;
+        overflow-x: auto
+    }
+
+    .sidebar nav a {
+        white-space: nowrap;
+        font-size: 11px;
+        padding: 9px
+    }
+
+    .main {
+        padding: 20px 13px
+    }
+
+    .date {
+        display: none
+    }
+
+    .banner {
+        padding: 20px
+    }
+
+    .banner h2 {
+        font-size: 17px
+    }
+
+    .banner-icon {
+        font-size: 55px;
+        margin: 0
+    }
+
+    .stats {
+        gap: 9px
+    }
+
+    .stats article {
+        padding: 12px
+    }
+
+    .stats strong {
+        font-size: 23px
+    }
+
+    .panel {
+        padding: 14px
+    }
+}
